@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -182,6 +186,7 @@ header {
     color: #434455;
     letter-spacing: 0.02em;
     line-height: 1.5;
+    transition: color 700ms ease 15ms;
 }
 
 .header-contacts:hover,
@@ -328,9 +333,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-
 
 .sotial-icons-ellipse {
     width: 40px;
@@ -405,8 +408,33 @@ header {
     gap: 48px 24px;
 }
 
-.our-portfolio-item {
-    
+..our-portfolio-item {
+
+}
+
+.our-portfolio-item:hover .portfolio-cover-text {
+    transform: translateY(0);
+}
+
+.portfolio-cower-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-cover-text {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    height: 100%;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-left: 32px;
+    transform: translateY(100%);
+    transition: transform 500ms ease ;
 }
 
 .our-portfolio-img {}
