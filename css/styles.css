@@ -364,7 +364,7 @@ header {
 
 .sotial-icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 24px;
     max-width: 232px;
@@ -500,7 +500,8 @@ footer {
     margin-right: 120px;
 }
 
-.sotial-icons-ellipse-footer:hover {
+.sotial-icons-ellipse-footer:hover,
+.sotial-icons-ellipse-footer:focus {
     background-color: #31d0aa;
 }
 
